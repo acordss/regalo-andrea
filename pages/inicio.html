@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inicio</title>
+
+		<link rel="icon" href="../images/hellokitty.png" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="../styles/inicio.css" />
+	</head>
+	<body>
+		<div class="swiper MySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-01.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Amo pasar los momentos contigo</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-02.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Somos dos almas que nacieron para estar unidas</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-03.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>La distancia sólo nos separó físicamente, pero seguimos juntos en nuestros corazones</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-04.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Juntos somos el guapo y la más guapa</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-05.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Te agradezco infinitamente por haber entrado en mi vida y haberte adueñado de mi ser</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-06.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Siempre será un hasta luego, porque sé que nos volveremos a ver</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-07.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Tu sonrida me cautiva y tu mirada me hipnotiza</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-08.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Siempre necesito la calidez de tus palabras para poder sentirme en casa</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-09.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Podremos ser diferentes, pero siempre nos adaptaremos al otro, porque eso es amor</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-10.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Solo pienso en abrazarte y besarte, el tiempo pasa rápido cuando no estoy contigo</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-image">
+						<img src="../images/slider-11.jpg" alt="" />
+					</div>
+					<div class="swiper-text">
+						<p>Te amo con todo mi corazón, con toda mi alma y con todo mi ser 205</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="../index.html" class="button-dicc prev">Regresar</a>
+
+		<a href="./carta.html" class="button-dicc next">Siguiente</a>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".MySwiper", {
+				effect: "coverflow",
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: "auto",
+
+				speed: 600,
+
+				autoplay: {
+					delay: 3000,
+				},
+
+				coverflowEffect: {
+					depth: 600,
+					modifier: 1,
+					slidesShadows: true,
+					rotate: 0,
+					stretch: 0,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+	</body>
+</html>

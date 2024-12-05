@@ -1,0 +1,99 @@
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	background: radial-gradient(beige, bisque);
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.swiper {
+	width: 100%;
+	padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+	width: 30rem;
+	height: 30rem;
+	box-shadow: 0 0 20px 0 #333;
+	padding: 40px;
+	text-align: center;
+	border-radius: 20px;
+	color: beige;
+	animation: colorChange 4s infinite alternate ease-in-out;
+}
+.swiper-slide-active {
+	animation: pulse 2s infinite ease-in-out, colorChange 4s infinite alternate ease-in-out;
+}
+
+.swiper-text p {
+	font-size: 2rem;
+	font-style: italic;
+	text-wrap: pretty;
+}
+
+.swiper-image img {
+	box-shadow: 0 0 20px 0 #333;
+	border-radius: 20px;
+	width: 90%;
+	height: 15rem;
+	object-fit: cover;
+	object-position: top;
+}
+
+.button-dicc {
+	border: 3px solid #b62323;
+	padding: 0.7rem 1rem;
+	font-size: 1.4rem;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #333;
+	transition: all 0.5s ease;
+	position: absolute;
+	bottom: 10px;
+}
+
+.button-dicc:hover {
+	border-color: transparent;
+	background-color: #b62323;
+	color: beige;
+	box-shadow: 0 0 20px #333;
+	animation: colorChange 4s infinite alternate ease-in-out;
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: #b62323;
+	}
+	100% {
+		background-color: #793333;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
